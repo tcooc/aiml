@@ -17,10 +17,10 @@ class AiEngine
 
     _.each @topics, (topic) =>
       _.each topic.categories, (category) =>
-	    try
+        try
           category["room:#{@roomName}"] = new RegExp (category.pattern.replace '*', '([^/?!.;:$]*)'), "i"
-		catch e
-		  console.log 'failed to compile pattern ',  category.pattern
+        catch e
+          console.log 'failed to compile pattern ',  category.pattern
 
   getCurrentTopic: () ->
     _.find @topics, (topic) => topic.name is @view.topic
