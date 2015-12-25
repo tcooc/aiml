@@ -19,7 +19,6 @@
     "test": "mocha --reporter spec --compilers coffee:coffee-script -t 10000"
   },
   "dependencies": {
-    "coffee-script": "~1.6.1",
     "underscore": "~1.4.4",
     "async": "~0.2.6",
     "dom-js": "~0.0.9",
